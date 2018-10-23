@@ -562,13 +562,13 @@ end
 
 #
 # # 2D StaticArrays
-@recipe f(xy::AVec{StaticArrays.SVector{2,T}}) where {T<:Number} = unzip(xy)
-@recipe f(xy::StaticArrays.SVector{2,T}) where {T<:Number}       = [xy[1]], [xy[2]]
+@recipe f(xy::AVec{SVector{2,T}}) where {T<:Number} = unzip(xy)
+@recipe f(xy::SVector{2,T}) where {T<:Number}       = [xy[1]], [xy[2]]
 
 #
 # # 3D StaticArrays
-@recipe f(xyz::AVec{StaticArrays.SVector{3,T}}) where {T<:Number} = unzip(xyz)
-@recipe f(xyz::StaticArrays.SVector{3,T}) where {T<:Number}       = [xyz[1]], [xyz[2]], [xyz[3]]
+@recipe f(xyz::AVec{SVector{3,T}}) where {T<:Number} = unzip(xyz)
+@recipe f(xyz::SVector{3,T}) where {T<:Number}       = [xyz[1]], [xyz[2]], [xyz[3]]
 
 #
 # # --------------------------------------------------------------------

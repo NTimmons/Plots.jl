@@ -5,6 +5,7 @@ _current_plots_version = v"0.20.6"
 using Reexport
 
 import StaticArrays
+using StaticArrays
 using Dates, Printf, Statistics, Base64, LinearAlgebra
 import SparseArrays: findnz
 
